@@ -382,34 +382,73 @@ const App = () => {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="footer-premium">
         <div className="container">
-          <div className="footer-content">
-            <div className="footer-brand">
+          <div className="footer-grid">
+            {/* Brand Column */}
+            <div className="footer-col brand-col">
               <span className="brand-name-footer">Gaamad</span>
-              <p>Authentic purity from Moond Farm, Hanumangarh. Supporting traditional farming and healthy living since 2026.</p>
-            </div>
-            <div className="footer-links">
-              <h4>Explore</h4>
-              <a href="#home">Home</a>
-              <a href="#products">Products</a>
-              <a href="#purity">Purity Process</a>
-              <a href="#blog">Blog</a>
-              <a href="#contact">Contact</a>
-            </div>
-            <div className="footer-contact">
-              <h4>Contact Center</h4>
-              <p>Hotline: 8619544424</p>
-              <div className="social-links">
-                <button className="wa-footer-btn" onClick={() => window.open('https://wa.me/8619544424', '_blank')}>
-                  WhatsApp Order
-                </button>
+              <p className="brand-tagline">Experience the Soul of Purity. Handcrafted at Moond Farm, Hanumangarh, Rajasthan.</p>
+              <div className="footer-socials">
+                <a href="#" className="social-icon">Instagram</a>
+                <a href="#" className="social-icon">Facebook</a>
+                <a href="#" className="social-icon">Twitter</a>
               </div>
             </div>
+
+            {/* Quick Links */}
+            <div className="footer-col">
+              <h4>Quick Links</h4>
+              <ul className="footer-ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Our Products</a></li>
+                <li><a href="#purity">Purity Promise</a></li>
+                <li><a href="#blog">Farm Journals</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
+
+            {/* Support/Policies */}
+            <div className="footer-col">
+              <h4>Support</h4>
+              <ul className="footer-ul">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Refund Policy</a></li>
+              </ul>
+            </div>
+
+            {/* Contact Column */}
+            <div className="footer-col contact-col">
+              <h4>Location & Contact</h4>
+              <p>📍 Moond Farm, Hanumangarh <br />Rajasthan, India</p>
+              <div className="footer-contact-item">
+                <span className="icon">📞</span>
+                <a href="tel:8619544424">+91 86195 44424</a>
+              </div>
+              <div className="footer-contact-item">
+                <span className="icon">✉️</span>
+                <a href="mailto:info@gaamad.com">info@gaamad.com</a>
+              </div>
+              <button
+                className="footer-wa-btn"
+                onClick={() => window.open('https://wa.me/8619544424', '_blank')}
+              >
+                Inquire on WhatsApp 💬
+              </button>
+            </div>
           </div>
-          <div className="footer-bottom">
-            <p>&copy; 2026 Gaamad Products. All rights reserved.</p>
-            <p className="js-tech">Design by <a href="https://www.jstechsolution.in" target="_blank" rel="noopener noreferrer">JS Tech Solution</a></p>
+
+          <div className="footer-divider"></div>
+
+          <div className="footer-copyright">
+            <div className="copyright-text">
+              <p>&copy; 2026 Gaamad. All traditional rights reserved.</p>
+            </div>
+            <div className="js-tech-attribution">
+              <p>Crafted with Excellence by <a href="https://www.jstechsolution.in" target="_blank" rel="noopener noreferrer">JS Tech Solution</a></p>
+            </div>
           </div>
         </div>
       </footer>
