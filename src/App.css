@@ -1039,3 +1039,128 @@ h4 {
     gap: 20px;
   }
 }
+
+/* Testimonials & FAQ Section Styles */
+.testimonials-section {
+  padding: 120px 0;
+  background: white;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.testimonial-card {
+  padding: 50px;
+  background: var(--card-bg);
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  position: relative;
+  transition: var(--transition);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-md);
+}
+
+.testimonial-card .stars {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: var(--accent);
+}
+
+.testimonial-card p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.customer-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--primary);
+}
+
+.customer-info span {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.faq-section {
+  padding: 120px 0;
+  background: var(--card-bg);
+}
+
+.faq-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.faq-item:hover {
+  border-color: var(--accent-light);
+}
+
+.faq-item summary {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+  content: '-';
+}
+
+.faq-item p {
+  padding-top: 20px;
+  color: var(--text-muted);
+  border-top: 1px solid #f9f9f9;
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    padding: 30px;
+  }
+}

@@ -147,6 +147,8 @@ const App = () => {
             <a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a>
             <a href="#products" onClick={() => setIsMenuOpen(false)}>Products</a>
             <a href="#purity" onClick={() => setIsMenuOpen(false)}>Purity</a>
+            <a href="#testimonials" onClick={() => setIsMenuOpen(false)}>Stories</a>
+            <a href="#faq" onClick={() => setIsMenuOpen(false)}>FAQ</a>
             <a href="#blog" onClick={() => setIsMenuOpen(false)}>Blog</a>
             <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
             <button className="cart-toggle-btn" onClick={() => { setIsCartOpen(true); setIsMenuOpen(false); }}>
@@ -311,6 +313,58 @@ const App = () => {
           </div>
         </div>
       </section>
+      {/* Testimonials Section */}
+      <section id="testimonials" className="testimonials-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Customer Stories</h2>
+            <p className="section-subtitle">Real experiences from our Gaamad family</p>
+            <div className="section-line"></div>
+          </div>
+          <div className="testimonial-grid">
+            <div className="testimonial-card animate-fade-in">
+              <div className="stars">⭐⭐⭐⭐⭐</div>
+              <p>"The Bilona Ghee from Moond Farm is exactly like what my grandmother used to make. The aroma is heavenly!"</p>
+              <div className="customer-info">
+                <h4>Sunita Sharma</h4>
+                <span>Verified Buyer</span>
+              </div>
+            </div>
+            <div className="testimonial-card animate-fade-in">
+              <div className="stars">⭐⭐⭐⭐⭐</div>
+              <p>"I've been looking for chemical-free Jaggery for a long time. Gaamad's Sakar is now a staple in my morning tea."</p>
+              <div className="customer-info">
+                <h4>Rajesh Kumar</h4>
+                <span>Health Enthusiast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="faq-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Common Questions</h2>
+            <div className="section-line"></div>
+          </div>
+          <div className="faq-grid">
+            <details className="faq-item">
+              <summary>What is the Bilona method?</summary>
+              <p>The traditional Bilona method involves churning curd to extract butter, which is then slow-cooked on a wood fire. This preserves the medicinal properties and aroma of the ghee.</p>
+            </details>
+            <details className="faq-item">
+              <summary>Are your products organic?</summary>
+              <p>Yes, we maintain a strictly natural process at Moond Farm. No chemicals, fertilizers, or preservatives are used in our production.</p>
+            </details>
+            <details className="faq-item">
+              <summary>Do you ship outside Rajasthan?</summary>
+              <p>Yes! We ship our pure products across India. Delivery times vary between 3-7 business days depending on your location.</p>
+            </details>
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section id="about" className="about-section">
@@ -415,6 +469,8 @@ const App = () => {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#products">Our Products</a></li>
                 <li><a href="#purity">Purity Promise</a></li>
+                <li><a href="#testimonials">Customer Stories</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#blog">Farm Journals</a></li>
                 <li><a href="#contact">Contact Us</a></li>
               </ul>
