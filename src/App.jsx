@@ -106,7 +106,7 @@ const App = () => {
     const phoneNumber = "8619544424";
     const itemsList = cart.map(item => `- ${item.name} (₹${item.price})`).join('%0A');
     const total = calculateTotal();
-    const message = `Halo Gaamad! I would like to order:%0A${itemsList}%0A%0ATotal Amount: ₹${total}%0A%0APlease confirm my order.`;
+    const message = `Halo Gaamad Store! I would like to order:%0A${itemsList}%0A%0ATotal Amount: ₹${total}%0A%0APlease confirm my order.`;
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
@@ -117,7 +117,7 @@ const App = () => {
     const email = formData.get('email');
     const messageContent = formData.get('message');
     const phoneNumber = "8619544424";
-    const finalMsg = `Halo Gaamad! New Inquiry:%0AName: ${name}%0AEmail: ${email}%0AMessage: ${messageContent}`;
+    const finalMsg = `Halo Gaamad Store! New Inquiry:%0AName: ${name}%0AEmail: ${email}%0AMessage: ${messageContent}`;
     window.open(`https://wa.me/${phoneNumber}?text=${finalMsg}`, '_blank');
   };
 
@@ -140,7 +140,7 @@ const App = () => {
       <nav className="navbar glass">
         <div className="container nav-content">
           <div className="logo-area" onClick={() => window.scrollTo(0, 0)}>
-            <span className="brand-name-stylish">Gaamad</span>
+            <span className="brand-name-stylish">Gaamad Store</span>
           </div>
 
           <div className={`nav-links ${isMenuOpen ? 'mobile-active' : ''}`}>
@@ -221,7 +221,7 @@ const App = () => {
             <p className="hero-subtitle">Traditional Desi Ghee and Organic Jaggery products, handcrafted at Moond Farm, Hanumangarh. No chemicals, just nature's goodness.</p>
             <div className="hero-actions">
               <a href="#products" className="btn btn-primary">Our Catalog</a>
-              <a href="#purity" className="btn btn-secondary">Why Gaamad?</a>
+              <a href="#purity" className="btn btn-secondary">Why Gaamad Store?</a>
             </div>
           </div>
           <div className="hero-image-container animate-slide-up">
@@ -373,12 +373,12 @@ const App = () => {
             <div className="about-visual">
               <span className="floating-text">Quality</span>
               <span className="floating-text">Trust</span>
-              <span className="floating-text">Gaamad</span>
+              <span className="floating-text">Gaamad Store</span>
             </div>
           </div>
           <div className="about-text">
             <h2>Our Heritage</h2>
-            <p>Moond Farm isn't just a business; it's a legacy rooted in the soils of Hanumangarh, Rajasthan. We serve the community with <span className="highlight">Gaamad</span>, a brand synonymous with 100% purity and high-quality traditional products.</p>
+            <p>Moond Farm is a private proprietorship firm rooted in the soils of Hanumangarh, Rajasthan. We serve the community with <span className="highlight">Gaamad Store</span>, our premium brand synonymous with 100% purity and traditional quality.</p>
             <div className="purity-badges">
               <div className="badge-item">✅ Handcrafted</div>
               <div className="badge-item">✅ Tested Quality</div>
@@ -441,8 +441,8 @@ const App = () => {
           <div className="footer-grid">
             {/* Brand Column */}
             <div className="footer-col brand-col">
-              <span className="brand-name-footer">Gaamad</span>
-              <p className="brand-tagline">Experience the Soul of Purity. Handcrafted at Moond Farm, Hanumangarh, Rajasthan.</p>
+              <span className="brand-name-footer">Gaamad Store</span>
+              <p className="brand-tagline">Gaamad Store is a premium brand of Moond Farm (A Private Proprietorship Company). Handcrafted with soul in Hanumangarh, Rajasthan.</p>
               <div className="footer-socials">
                 <a href="#" className="social-icon" title="Instagram">
                   <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
@@ -512,7 +512,7 @@ const App = () => {
 
           <div className="footer-copyright">
             <div className="copyright-text">
-              <p>&copy; 2026 Gaamad. All traditional rights reserved.</p>
+              <p>&copy; 2026 Gaamad Store. All traditional rights reserved.</p>
             </div>
             <div className="js-tech-attribution">
               <p>Crafted with Excellence by <a href="https://www.jstechsolution.in" target="_blank" rel="noopener noreferrer">JS Tech Solution</a></p>
