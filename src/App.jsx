@@ -366,32 +366,51 @@ const App = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="about-section">
-        <div className="container about-grid">
-          <div className="about-image">
-            <div className="about-visual">
-              <span className="floating-text">Quality</span>
-              <span className="floating-text">Trust</span>
-              <span className="floating-text">Gaamad Store</span>
-            </div>
-          </div>
-          <div className="about-text">
-            <h2>Our Heritage</h2>
-            <p>Moond Farm is a private proprietorship firm rooted in the soils of Hanumangarh, Rajasthan. We serve the community with <span className="highlight">Gaamad Store</span>, our premium brand synonymous with 100% purity and traditional quality.</p>
-            <div className="purity-badges">
-              <div className="badge-item">✅ Handcrafted</div>
-              <div className="badge-item">✅ Tested Quality</div>
-              <div className="badge-item">✅ Farm Fresh</div>
-            </div>
-            <div className="about-stats">
-              <div className="stat">
-                <h4>Traditional</h4>
-                <p>Hanumangarh Pride</p>
+      {/* Heritage Section (Redesigned) */}
+      <section id="about" className="heritage-premium">
+        <div className="container">
+          <div className="heritage-grid">
+            <div className="heritage-visual animate-slide-right">
+              <div className="heritage-img-wrapper">
+                <img src="/heritage.png" alt="Moond Farm Heritage" className="heritage-main-img" />
+                <div className="heritage-overlay-card glass">
+                  <span className="est">Established 2026</span>
+                  <p>A Private Proprietorship Firm</p>
+                </div>
               </div>
-              <div className="stat">
-                <h4>Safe</h4>
-                <p>Lab Verified</p>
+            </div>
+
+            <div className="heritage-content animate-fade-in">
+              <span className="pre-title">Our Roots</span>
+              <h2 className="heritage-title">The Legacy of <br /><span className="accent-text">Moond Farm</span></h2>
+
+              <div className="heritage-text-block">
+                <p>Moond Farm is more than just a farm; it's a private proprietorship firm rooted in the heart of <strong>Hanumangarh, Rajasthan</strong>. Our journey began with a single mission: to bring the soul of traditional Indian farming to the modern table.</p>
+
+                <p>Under our premium brand, <span className="highlight-dark">Gaamad Store</span>, we serve the community with products that are synonymous with 100% purity, handcrafted quality, and the timeless wisdom of ancient methods.</p>
+              </div>
+
+              <div className="heritage-features">
+                <div className="h-feature">
+                  <div className="h-icon">🌿</div>
+                  <div className="h-info">
+                    <h4>Ethical Farming</h4>
+                    <p>Proprietary traditional methods</p>
+                  </div>
+                </div>
+                <div className="h-feature">
+                  <div className="h-icon">🏺</div>
+                  <div className="h-info">
+                    <h4>Bilona Tradition</h4>
+                    <p>Authentic handcrafted ghee</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="heritage-badges">
+                <div className="badge-pill">✓ Lab Verified</div>
+                <div className="badge-pill">✓ No Chemicals</div>
+                <div className="badge-pill">✓ Direct from Farm</div>
               </div>
             </div>
           </div>
